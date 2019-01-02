@@ -11,16 +11,19 @@
 
           // var userLang = navigator.language || navigator.userLanguage;
           // alert ("The language is: " + userLang);
+          // alert(location.pathname);
 
           // alert ("The location is: " + document.location.href);
           var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage).substr(0, 2).toLowerCase();
           if (lang != 'ru') {
             // alert ("eng");
             // window.location.href = "http://gainanov.pro";
-            window.location.href = window.location.href + "/en";
+            // window.location.href = window.location.href + "/en";
+            location.pathname = '/en'
           } else {
             // alert ("rus");
-            window.location.href = window.location.href + "/ru";
+            // window.location.href = window.location.href + "/ru";
+            location.pathname = '/ru'
           }
         </script>
     </head>
